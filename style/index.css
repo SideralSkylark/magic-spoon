@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 49, 49);
+    font: 16px / 1em Mabry, Helvetica, sans-serif;;
+}
+
+header > nav {
+    display: flex;    
+    width: 90%;
+    max-width: 1150px;
+    margin: 30px auto;
+    position: relative;
+    align-items: center;
+}
+
+.header-links-left {
+    margin-right: auto;
+    text-align: right;
+    flex: 1;
+}
+
+.header-links-left li {
+    display: inline;
+}
+
+.header-links-left a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 345px;
+}
+
+.header-logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.magic {
+    margin-bottom: 5px;
+}
+
+.magic,
+.spoon {
+    display: block;
+}
+
+.header-links-right {
+    margin-left: auto;
+    text-align: left;
+    flex: 1;
+}
+
+.header-links-right li {
+    position: relative;
+    display: inline;
+}
+
+.header-links-right ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 16.5px;
+}
+
+.shopnow {
+    padding: 10px;
+}
+
+.header-links-right li:hover ul {
+    display: block;
+}
+
+.header-links-right ul li {
+    display: block;
+}
+
+.header-links-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-links-right li> ul > li {
+    margin-bottom: 7px;
+}
+
+.header-links-right li > ul > li > a {
+    color: blue;
+}
+
+.header-links-right li:hover > a {
+    color: blue;
+    background-color: white;
+    text-decoration: underline blue;
+}
+
+.header-actions {
+    position: absolute;
+    right: 0;
+}
+
+.header-actions a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-actions img {
+    width: 30px;
+}
