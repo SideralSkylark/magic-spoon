@@ -130,7 +130,7 @@ header > nav {
     width: 30px;
 }
 
-promo-bar {
+.promo-bar {
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -203,6 +203,23 @@ promo-bar {
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
+}
+
+.cereal-options {
+    background-color: #d7d5fd;
+    padding: 30px 0 20px;
+}
+
+.cereal-options h4 {
+    text-align: center;
+    font: bold 32px / 1.25em Mabry, Helvetica, sans-serif;
+    margin: 0;
+    color: rgb(33, 33, 128);
+}
+
+.cereal-options-inner {
+    display: flex;
+    overflow: scroll;
 }
 
 footer {
