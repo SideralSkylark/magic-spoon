@@ -1,0 +1,22 @@
+{
+    "name": "lenovo/magic-spoon",
+    "description": "A brief description of your project",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Lenovo\\MagicSpoon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SideralSkylark",
+            "email": "152505167+SideralSkylark@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
