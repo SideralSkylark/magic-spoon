@@ -1,0 +1,391 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 49, 49);
+    font: 16px / 1em Mabry, Helvetica, sans-serif;;
+}
+
+a {
+    position: relative;
+    word-wrap: break-word;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+header > nav {
+    display: flex;    
+    width: 90%;
+    max-width: 1150px;
+    margin: 30px auto;
+    position: relative;
+    align-items: center;
+    z-index: 1001;
+}
+
+.header-links-left {
+    margin-right: auto;
+    text-align: right;
+    flex: 1;
+}
+
+.header-links-left li {
+    display: inline;
+}
+
+.header-links-left a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 345px;
+}
+
+.header-logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.magic {
+    margin-bottom: 5px;
+}
+
+.magic,
+.spoon {
+    display: block;
+}
+
+.header-links-right {
+    margin-left: auto;
+    text-align: left;
+    flex: 1;
+}
+
+.header-links-right li {
+    position: relative;
+    display: inline;
+}
+
+.header-links-right ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 16.5px;
+}
+
+.shopnow {
+    padding: 10px;
+}
+
+.header-links-right li:hover ul {
+    display: block;
+}
+
+.header-links-right ul li {
+    display: block;
+}
+
+.header-links-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-links-right li> ul > li {
+    margin-bottom: 7px;
+}
+
+.header-links-right li > ul > li > a {
+    color: blue;
+}
+
+.header-links-right li:hover > a {
+    color: blue;
+    background-color: white;
+    text-decoration: underline blue;
+}
+
+.header-actions {
+    position: absolute;
+    right: 0;
+}
+
+.header-actions a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-actions img {
+    width: 30px;
+}
+
+.promo-bar {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the promo bar appears above other content */
+}
+
+.hero-container {
+    height: 87vh;
+    min-height: 900px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 10;
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    max-width: 1150px;
+    float: right;
+   
+}
+
+.hero-content h1 {
+    margin: 0 0 40px;
+    font: 700 60px / 1.05em Mabry, Helvetica, sans-serif;
+    color: white;
+}
+
+.hero-links {
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+    position: relative;
+    font: 700 20px / 59px Mabry, Helvetica, sans-serif;
+}
+
+.hero-links a {
+    border: 1px solid white;
+    background-color: white;
+    color: blue;
+    padding: 0 30px;
+    border-radius: 28px;
+}
+
+.hero-links a:hover {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.hero-img img {
+    position: absolute;
+    width: 101%;
+    height: 101%;
+    max-width: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.cereal-options {
+    background-color: #d7d5fd;
+    padding: 30px 0 20px;
+}
+
+.cereal-options h4 {
+    text-align: center;
+    font: bold 32px / 1.25em Mabry, Helvetica, sans-serif;
+    margin: 0;
+    color: rgb(33, 33, 128);
+}
+
+.cereal-options-inner {
+    display: flex;
+    overflow: scroll;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 65px 0 90px;
+    display: flex;
+}
+
+footer,
+.footer-container {
+    justify-content: space-between;
+}
+
+.footer-magic-spoon {
+    font-size: 50px;
+    margin-bottom: 8px;;
+}
+
+.footer-container {
+    position: relative;
+    display: flex;
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.footer-links {
+    font-size: 13px;
+}
+
+.footer-links ul {
+    list-style: none;
+    max-width: 420px;
+    margin: 0 0 17px;
+    padding: 17px 0 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.footer-links li::after {
+    content: " ";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin: 0 3px 0 5px;
+    vertical-align: middle;
+    background: white;
+    border: 100%;
+}
+
+.footer-links ul li a {
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;   
+}
+
+.footer-social-media {
+    width: 90%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-social-media a {
+    text-align: center;
+    color: white;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.contact {
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: .04em;
+    font: 700 20px / 59px Mabry, Helvetica, sans-serif;
+    border: 2px solid white;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.contact:hover {
+    color: rgb(255, 139, 255);
+    border-color: rgb(255, 139, 255);
+    background: white;
+}
+
+.footer-social-media img {
+    width: 40px;
+    color: white;
+    background-color: white;
+    margin-top: 10px;
+}
+
+#footer-instagram-link img{
+    width: 40px;
+}
+
+#footer-x-link img {
+    margin-top: 15px;
+    width: 30px;
+}
+
+.footer-social-media img:hover {
+    background-color: rgb(255, 139, 255);
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    color: grey;
+}
+
+.footer-subscribe {
+    max-width: 460px;
+}
+
+.footer-subscribe h2 {
+    font-size: 20px;
+    margin: 0;
+    font: 500 28px / 1.25em Mabry, Helvetica, sans-serif;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+}
+
+.footer-subscribe form {
+    margin: 15px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-subscribe input[type=email] {
+    width: 250px;
+    height: 55px;
+    padding: 0 20px;
+    background: transparent;
+    border: 2px solid white;
+    font: 500 20px / 59px Mabry, Helvetica, sans-serif;
+    border-radius: 30px;
+    color: white;
+}
+
+.footer-subscribe input[type=submit] {
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 0;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font: 700 20px / 59px Mabry, Helvetica, sans-serif;
+    border: 2px solid white;
+    border-radius: 28px;
+    color: white;
+    background: transparent;
+}
+
+.footer-subscribe input[type=submit]:hover {
+    color: rgb(255, 139, 255);
+    border-color: rgb(255, 139, 255);
+    background: white;
+}
