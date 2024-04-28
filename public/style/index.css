@@ -381,7 +381,7 @@ footer,
     border: 2px solid white;
     border-radius: 28px;
     color: white;
-    background: transparent;
+    background: transparent;    
 }
 
 .footer-subscribe input[type=submit]:hover {

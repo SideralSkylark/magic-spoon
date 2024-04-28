@@ -1,12 +1,4 @@
-<div class="footer">
-            <div class="footer-text">
-                <h2>Happiness 100% Guaranteed </h2>
-                <p>SEE TERMS OF USE.</p>
-            </div>
-            <a href="#">TRY NOW</a>
-        </div>
-    </main>
-    <footer>
+<footer>
         <div class="footer-container">
             <div class="footer-links">
                 <h3 class="footer-magic-spoon">MAGIC SPOON</h3>
@@ -58,7 +50,7 @@
             </div>
             <div class="footer-subscribe">
                 <h2>Don't miss the magic:</h2>
-                <form>
+                <form method="post">
                     <input type="email" placeholder="Your email">
                     <input type="submit">
                 </form>

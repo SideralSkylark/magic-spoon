@@ -1,5 +1,3 @@
-<?php include("header.php"); ?>
-
 <div class="promo-bar">
         <script></script>
     </div>
@@ -9,12 +7,12 @@
                 <div class="hero-content">
                     <h1>Childhood clasics. Grown up ingredients.</h1>
                     <div class="hero-links">
-                        <a href="cereal.php">SHOP CEREAL</a>
-                        <a href="treats.php">SHOP TREATS</a>
+                        <a href="/cereal">SHOP CEREAL</a>
+                        <a href="/treats">SHOP TREATS</a>
                     </div>
                 </div>
                 <span class="hero-img">
-                    <img src="../Assets/images/MS_CEREAL_TREATS_HOMEPAGE_2000x1007_1.24.avif" alt="hero-image">
+                    <img src="/../Assets/images/MS_CEREAL_TREATS_HOMEPAGE_2000x1007_1.24.avif" alt="hero-image">
                 </span>
             </section>
         </div>
@@ -201,6 +199,11 @@
                 </div>
             </div>
         </div>
-        <?php include("footer.php") ?>
-</body>
-</php>
+        <div class="footer">
+            <div class="footer-text">
+                <h2>Happiness 100% Guaranteed </h2>
+                <p>SEE TERMS OF USE.</p>
+            </div>
+            <a href="#">TRY NOW</a>
+        </div>
+    </main>
