@@ -199,11 +199,5 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="footer-text">
-                <h2>Happiness 100% Guaranteed </h2>
-                <p>SEE TERMS OF USE.</p>
-            </div>
-            <a href="#">TRY NOW</a>
-        </div>
+        <?php include_once '../views/constant/footer-banner.php' ?>
     </main>

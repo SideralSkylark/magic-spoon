@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(53, 49, 49);
+    background-color: rgb(157, 197, 207);
     font: 16px / 1em Mabry, Helvetica, sans-serif;;
 }
 
@@ -18,6 +18,9 @@ a {
     border: none;
     cursor: pointer;
 }
+
+/*nav bar*/
+
 
 header > nav {
     display: flex;    
@@ -130,6 +133,8 @@ header > nav {
     width: 30px;
 }
 
+/*index page*/
+
 .promo-bar {
     background-color: black;
     color: white;
@@ -220,6 +225,60 @@ header > nav {
 .cereal-options-inner {
     display: flex;
     overflow: scroll;
+}
+
+/*footer*/
+
+.footer-banner {
+    padding: 50px 0;
+    text-align: center;
+    background-color: purple;
+}
+
+.footer-banner-content {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+    align-items: center;
+}
+
+.footer-banner-content h2:not(.hollow) {
+    color: white;
+}
+
+.footer-banner-content  h2 {
+    display: inline-block;
+    vertical-align: middle;
+    font: 700 55px / 1.05em Mabry, Helvetica, sans-serif;
+}
+
+.hollow {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+
+.footer-banner-content a {
+    margin-left: 30px;
+    color: white;
+    background-color: rgb(28, 28, 102);
+    padding: 0 30px;
+    display: inline-block;
+    border-radius: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font: 700 20px / 59px Mabry, Helvetica, sans-serif; 
+}
+
+.footer-banner-terms {
+    color: white;
+    max-width: 1150px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    width: 90%;
+    margin: auto;
 }
 
 footer {
@@ -388,4 +447,159 @@ footer,
     color: rgb(255, 139, 255);
     border-color: rgb(255, 139, 255);
     background: white;
+}
+
+
+/* login page */
+.login-page {
+    margin: 180px auto 90px;
+}
+
+.login-section {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    max-width: 780px;
+}
+
+.login-form {
+    padding: 0 10px 20px;
+    width: 100%;
+}
+
+.login-form h1 {
+    font-size: 38px;
+    text-align: center;
+    font-family: Mabry Pro;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.login-form a {
+    color: white;
+    background-color: rgb(28, 28, 102);
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+    border: 2px solid rgb(28, 28, 102);
+    border-radius: 28px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.login-form a.login-button {
+    background-color: white;
+    color: rgb(28, 28, 102); 
+    border-color: white;
+}
+
+.login-form a:hover {
+    background-color: rgb(38, 38, 122);
+}
+
+.login-form form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.login-form label {
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    padding: 15px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgb(19, 19, 117);
+    border-radius: 28px;
+    margin-bottom: 20px;
+}
+
+.login-email-section {
+    width: 100%;
+}
+
+.login-email-section label,
+.login-password-section label {
+    padding: 10px;
+    color: rgb(19, 19, 117);
+}
+
+.login-email-section input,
+.login-password-section input {
+    margin-top: 10px;
+}
+
+#login-register {
+    background-color: white;
+    color: rgb(19, 19, 117);
+    border: 2px solid rgb(19, 19, 117);
+}
+
+#login-register:hover {
+    text-decoration: underline;
+}
+
+#login-forgoten-pass {
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+}
+
+/* register page*/
+
+.register-page {
+    margin: 180px auto 90px;
+    max-width: 780px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.register-page h1 {
+    font-size: 38px;
+    text-align: center;
+    font-family: Mabry Pro;
+    font-weight: 900;
+    margin-bottom: 30px; 
+    color: rgb(33, 33, 128); 
+}
+
+.register-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-inputs label {
+    color: rgb(19, 19, 117);
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.register-inputs input {
+    padding: 15px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgb(19, 19, 117);
+    border-radius: 28px;
+}
+
+.register-page input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(28, 28, 102);
+    color: white;
+    border: 2px solid rgb(28, 28, 102);
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.register-page input[type="submit"]:hover {
+    background-color: rgb(38, 38, 122);
 }

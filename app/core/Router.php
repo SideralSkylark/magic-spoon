@@ -32,28 +32,28 @@ class Router {
         if (is_string($callback)) {
             return $this->renderView($callback);
         }
-        if (is_array($callback)) {
+        if (is_array($callback)) {  
             $callback[0] = new $callback[0]();
         }
         return call_user_func($callback);
     }
 
-    public function renderView($view, $params = []) {
-        $layoutContent = $this->layoutContent();
+    public function renderView($view, $params = [], $layout = 'main') {
+        $layoutContent = $this->layoutContent($layout);
         $viewContent = $this->renderOnlyView($view, $params);
 
         return str_replace('{{content}}', $viewContent, $layoutContent);
     }
 
-    public function renderContent($viewContent) {
-        $layoutContent = $this->layoutContent();
+    public function renderContent($viewContent, $layout = 'main') {
+        $layoutContent = $this->layoutContent($layout);
 
         return str_replace('{{content}}', $viewContent, $layoutContent);
     }
 
-    protected function layoutContent() {
+    protected function layoutContent($layout) {
         ob_start();
-        include_once Application::$ROOT_DIR ."/views/layout/main.php";
+        include_once Application::$ROOT_DIR ."/views/layout/$layout.php";
         return ob_get_clean();
     } 
 

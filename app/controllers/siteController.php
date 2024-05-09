@@ -9,18 +9,16 @@ class SiteController extends Controller {
 
     public function loadAbout() {
         $params = [
-            'name' => "Sidik",
-            'cssFile' => 'index.css'
+            'cssLink' => '/style/index.css'
         ];
-        return Application::$app->router->renderView("about", $params);
+        return $this->render('about', $params);
     }
 
     public function loadHome() {
         $params = [
-            'name' => "Sidik",
-            'cssFile' => 'index.css'
+            'cssLink' => '/style/index.css'
         ];
-        return Application::$app->router->renderView("home", $params);
+        return $this->render('home', $params);
     }
 
     public function loadShop() {
@@ -47,7 +45,7 @@ class SiteController extends Controller {
         $params = [
             'name' => "Sidik"
         ];
-        return $this->render('user', $params);
+        return $this->render('login', $params);
     }
 
     
