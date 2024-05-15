@@ -1,5 +1,5 @@
 <div class="register-page">
-        <form action="/config/register.php" method="post">
+        <form action="/register" method="post">
             <h1>Create an account</h1>
             <div class="register-inputs">
                 <label for="register-first-name">FIRST NAME</label>

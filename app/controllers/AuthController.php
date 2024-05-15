@@ -1,38 +1,37 @@
-<?php 
+<?php
 
 namespace App\Controllers;
 
+use app\core\Application;
 use app\core\Controller;
 use app\core\Request;
-use app\models\RegisterModel;
+use app\models\UserModel;
 
 class AuthController extends Controller {
-    public function submitLogin() {
-        return $this->render('login');
+    public function submitLogin(Request $request) {
+        $email = $request->getBody()['email'] ?? null;
+        $password = $request->getBody()['password'] ?? null;
+
+        $userModel = new UserModel(Application::$app->database->getPDO());
+        $userModel->email = $email;
+        $userModel->password = $password;
+
+        if ($userModel->login()) {
+            return $this->render('user');
+        } else {
+            return $this->render('login', ['error' => 'Invalid email or password']);
+        }
     }
 
     public function register(Request $request) {
-        $errors = [];
-        $registerModel = new RegisterModel();
-        if ($request->isPost()) {
-            
-            $registerModel->loadData($request->getBody());
-            var_dump($registerModel);
-
-            if ($registerModel->validate() && $registerModel->register()) {
-                return header('\user');
-            }
-
-            return $this->render('register', [
-                'model' => $registerModel
-            ]);
-            }
-
-            return $this->render('register', [
-                'model' => $registerModel
-            ]);
+        $userModel = new UserModel(Application::$app->database->getPDO());
+        $userModel->loadData($request->getBody()['custumer'] ?? []);
+    
+        if ($userModel->register()) {
+            header('Location: /login');
+        } else {
+            return $this->render('register', ['model'=> $userModel]);
         }
-
-        
-        
     }
+    
+}

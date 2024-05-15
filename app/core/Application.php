@@ -1,6 +1,8 @@
 <?php
 namespace app\core;
 
+use app\core\Database;
+
 class Application {
 
     public static string $ROOT_DIR;
@@ -31,5 +33,9 @@ class Application {
     
     public function setController(\app\core\Controller $controller) {
         $this->controller = $controller;
+    }
+
+    public function getDatabase(): Database {
+        return $this->database;
     }
 }

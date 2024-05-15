@@ -2,7 +2,7 @@
     <div class="login-section">
         <div class="login-form">
             <h1>Login</h1>
-            <form method="post" action="/loginDao.php">
+            <form method="post" action="/login">
                 <div class="login-email-section">
                     <label for="login-email">EMAIL</label>
                     <input type="email" id="login-email" name="email">

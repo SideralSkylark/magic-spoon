@@ -57,7 +57,7 @@ class SiteController extends Controller {
 
     public function submit(Request $request) {
         $body = $request->getBody();
-        var_dump($body);
+        
 
         return 'Handling data';
     }
