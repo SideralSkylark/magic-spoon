@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\core\Application;
 use app\core\Controller;
+use app\core\Request;
 
 class SiteController extends Controller {
 
@@ -41,6 +42,10 @@ class SiteController extends Controller {
         return Application::$app->router->renderView("cart");
     }
 
+    public function loadRegisterPage() {
+        return Application::$app->router->renderView("register");
+    }
+
     public function loadProfile() {
         $params = [
             'name' => "Sidik"
@@ -50,7 +55,10 @@ class SiteController extends Controller {
 
     
 
-    public function submit() {
+    public function submit(Request $request) {
+        $body = $request->getBody();
+        var_dump($body);
+
         return 'Handling data';
     }
 }

@@ -1,1 +1,1 @@
-<h1>bundles</h1>
+<h1>Bundles</h1>

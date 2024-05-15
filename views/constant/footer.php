@@ -51,7 +51,7 @@
             <div class="footer-subscribe">
                 <h2>Don't miss the magic:</h2>
                 <form method="post">
-                    <input type="email" placeholder="Your email">
+                    <input type="email" placeholder="Your email" name="email">
                     <input type="submit">
                 </form>
             </div>

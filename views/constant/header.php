@@ -24,7 +24,7 @@
             </li>
         </ul>
         <div class="header-actions">
-            <a href="/user"><img src="/Assets/icons/user.png" alt="user"></a>
+            <a href="/login"><img src="/Assets/icons/user.png" alt="user"></a>
             <a href="/cart"><img src="/Assets/icons/magic-hat.png" alt="cart"></a>
         </div>
     </nav>

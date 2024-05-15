@@ -6,7 +6,8 @@
         "psr-4": {
             "Lenovo\\MagicSpoon\\": "src/",
             "app\\core\\": "app/core/",
-            "app\\controllers\\": "app/controllers/"
+            "app\\controllers\\": "app/controllers/",
+            "app\\models\\": "app/models/" 
         }
     },
     "authors": [

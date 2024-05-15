@@ -1,1 +1,1 @@
-<h1>shop now!</h1>
+<h1>Shop Now!</h1>
