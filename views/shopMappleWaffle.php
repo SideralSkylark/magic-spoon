@@ -1,25 +1,24 @@
-<div class="content clearfix">
+<div class="content clearfix mappleWaffle-page">
         <div class="left-zone">
-            <img class="main-image" src="/Assets/images/MS_VARIETY_4PACK-434857.avif" alt="Main Image">
-            <img class="mountain" src="/Assets/images/variety/Montain.png" alt="mountain">
+            <img class="main-image" src="/Assets/images/mappleWaffle/box.avif" alt="Main Image">
+            <img class="mountain" src="/Assets/images/mappleWaffle/Montain.avif" alt="mountain">
             <div class="circle-images"></div>
         </div>
         <div class="right-zone">
-            <h1>Variety</h1>
-            <h2>1 CASE (4 BOXES)</h2>
-            <p>Try our most popular flavors—Fruity, Frosted, Cocoa, and Peanut Butter.<br>
-             We’ve reimagined all your favorite childhood cereals with 4g net carbs, 13-14g <br>
-             complete protein, 140-170 calories, and no artificial ingredients.</p>
-            <h3>Variety</h3>
-            <img class="carrot" src="/Assets/images/variety/Carrot.png" alt="carrot">
-            <img class="wave" src="/Assets/images/variety/Wave.png" alt="wave">
+            <h1>Mapple Waffle</h1>
+            <h2>1 CASE(4 BOXES)</h2>
+            <p>We’ve reimagined your favorite waffle-flavored cereal with 4g net carbs,<br>
+             12g complete protein, 150 calories, and no artificial ingredients.</p>
+            <h3>Mapple Waffle</h3>
+            <img class="carrot" src="/Assets/images/mappleWaffle/Wave.avif" alt="carrot">
+            <img class="wave" src="/Assets/images/mappleWaffle/Montain.avif" alt="wave">
             <select id="flavourSelect">
-                <option value="Variety">Variety</option>
-                <option value="Fruity">Fruity</option>
-                <option value="Cocoa">Cocoa</option>
-                <option value="PeanutButter">Peanut Butter</option>
-                <option value="Frosted">Frosted</option>
                 <option value="MappleWaffle">Mapple Waffle</option>
+                <option value="Fruity">Fruity</option>
+                <option value="Variety">Variety</option>
+                <option value="Cocoa">Cocoa</option>
+                <option value="Frosted">Frosted</option>
+                <option value="PeanutButter">Peanut Butter</option>
                 <option value="CinnamonRoll">Cinnamon Roll</option>
                 <option value="BlueberryMuffin">Blueberry Muffin</option>
             </select>
@@ -44,17 +43,62 @@
 
     <!-- JavaScript functions -->
     <script>
+
+        // Set the page's class name
+    document.body.className = 'mappleWaffle-page';
+
         document.addEventListener("DOMContentLoaded", function () {
             const pageClasses = {
-                'shopnowfruety-page': [
+                'shopnowvariety-page': [
                     '/Assets/images/variety/1.avif',
                     '/Assets/images/variety/2.avif',
                     '/Assets/images/variety/3.avif',
                     '/Assets/images/variety/4.avif',
                     '/Assets/images/variety/5.avif',
                     '/Assets/images/variety/6.avif'
-                ]
-                // Add more page-specific arrays here as needed
+                ],
+                'shopnowfruety-page': [
+                    '/Assets/images/Fruety/macros.png',
+                    '/Assets/images/Fruety/bowl.png',
+                    '/Assets/images/Fruety/showcase.png',
+                    '/Assets/images/Fruety/boxes.jpg',
+                    '/Assets/images/Fruety/milk.jpg',
+                    '/Assets/images/Fruety/label.png'
+                ],
+                'cocoa-page': [
+                    '/Assets/images/Cocoa/macros.avif',
+                    '/Assets/images/Cocoa/bowl.avif',
+                    '/Assets/images/Cocoa/showcase.avif',
+                    '/Assets/images/Cocoa/boxes.avif',
+                    '/Assets/images/Cocoa/milk.avif',
+                    '/Assets/images/Cocoa/label.avif'
+                ],
+                'peanutbutter-page': [
+                    '/Assets/images/peanutButter/macros.avif',
+                    '/Assets/images/peanutButter/bowl.avif',
+                    '/Assets/images/peanutButter/showcase.avif',
+                    '/Assets/images/peanutButter/boxes.avif',
+                    '/Assets/images/peanutButter/milk.avif',
+                    '/Assets/images/peanutButter/label.avif'
+                ],
+                'frosted-page': [
+                    '/Assets/images/frosted/macros.avif',
+                    '/Assets/images/frosted/bowl.avif',
+                    '/Assets/images/frosted/showcase.avif',
+                    '/Assets/images/frosted/boxes.avif',
+                    '/Assets/images/frosted/milk.avif',
+                    '/Assets/images/frosted/label.avif'
+                ],
+                'mappleWaffle-page': [
+                    '/Assets/images/mappleWaffle/macros.avif',
+                    '/Assets/images/mappleWaffle/bowl.avif',
+                    '/Assets/images/mappleWaffle/showcase.avif',
+                    '/Assets/images/mappleWaffle/boxes.avif',
+                    '/Assets/images/mappleWaffle/milk.avif',
+                    '/Assets/images/mappleWaffle/label.avif'
+                ],
+
+                
             };
 
             Object.keys(pageClasses).forEach(pageClass => {
@@ -157,7 +201,7 @@
                 var quantity = parseInt(document.getElementById('quantity').textContent);
                 var itemName = document.querySelector('.right-zone h1').textContent;
                 var itemPrice = parseFloat(document.querySelector('#price').textContent.replace('$', ''));
-                const productId = 1;
+                const productId = 5;
 
                 var totalPrice = itemPrice * quantity;
                 this.cart.addItem({ id: productId, name: itemName, quantity: quantity, price: totalPrice });

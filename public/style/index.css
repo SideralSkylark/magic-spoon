@@ -1367,3 +1367,549 @@ input[type="submit"]{
   display: block;
   padding: 40px 0;
 }
+
+
+
+
+
+
+
+
+
+/* CSS for product hero section */
+.content {
+    overflow: hidden;
+}
+
+.product-hero {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.hero-images-desktop {
+    margin-bottom: 20px;
+}
+
+.hero-images-desktop img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.hero-images__featured img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.variant-dropdown {
+    margin-top: 20px;
+}
+
+.variant-dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.product-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-price {
+    margin-bottom: 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-control {
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.add-to-cart-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #e64943;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-content {
+        padding: 0;
+    }
+
+    .hero-images-desktop img,
+    .hero-images__featured img {
+        max-width: 100%;
+    }
+
+    .variant-dropdown select {
+        max-width: none;
+    }
+}
+
+.fruety-page {
+    background: linear-gradient(to top, rgb(212, 78, 152), rgb(157, 197, 207));
+    z-index: 10;
+    position:relative;
+}
+
+.cocoa-page {
+    background: linear-gradient(to top, rgb(139, 107, 70), rgb(157, 197, 207));
+    z-index: 10;
+    position:relative;
+}
+
+.peanutButter-page {
+    background: linear-gradient(to top, rgb(255, 190, 116), rgb(157, 197, 207));
+    z-index: 10;
+    position:relative;
+}
+
+.frosted-page {
+    background: linear-gradient(to top, rgb(230, 255, 116), rgb(157, 197, 207));
+    z-index: 10;
+    position:relative;
+}
+
+.mappleWaffle-page {
+    background: linear-gradient(to top, rgb(255, 183, 116), rgb(157, 197, 207));
+    z-index: 10;
+    position:relative;
+}
+
+.cinnamonRoll-page {
+    background: linear-gradient(to top, rgb(235, 211, 189), rgb(157, 197, 207));
+    z-index: 10;
+    position:relative;
+}
+
+.left-zone {
+    margin-top: 20px;
+    float: left;
+    width: 50%;
+}
+
+.right-zone {
+    font: 16px/1em Mabry,Helvetica,sans-serif;
+    margin-top: 20px;
+    float: right;
+    width: 50%;
+}
+
+.main-image {
+    width: 60%;
+    height: auto;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mountain, .carrot, .wave {
+    animation: slideIn 1s ease-out;
+}
+
+.palm, .pinkPalm {
+    animation: slideIn 1s ease-in;
+}
+
+.mountain {
+    width: 30%;
+    z-index: -1;
+    margin-right: auto;
+    animation-delay: 0.5s;
+}
+
+.palm {
+    width: 30%;
+    z-index: -1;
+    margin-right: auto;
+    animation-delay: 0.5s;
+}
+
+.carrot {
+    width: 30%;
+    position: absolute;
+    z-index: -1;
+    animation-delay: 1s;
+}
+
+.pinkPalm {
+    width: 30%;
+    position: absolute;
+    z-index: -10;
+    animation-delay: 1s;
+}
+
+.wave {
+    position:absolute;
+    z-index: -10;
+    width: 20%;
+    right: 0;
+    animation-delay: 1.5s;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Circular images styles */
+.circle-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.circle-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid rgb(33, 33, 128);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Modal styles */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    color: white;
+    font-size: 60px;
+    user-select: none;
+}
+
+
+
+
+/* Add similar styles for other circle images */
+
+.right-zone h1 {
+    font:Mabry,Helvetica,sans-serif;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+}
+
+.right-zone h2 {
+    font: Mabry,Helvetica,sans-serif;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #e74c3c;
+    margin-bottom: 0.5em;
+}
+
+.right-zone p {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+#price {
+    font-size: 1.5em;
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+
+
+.right-zone h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #3498db;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.right-zone select {
+    margin-bottom: 140px;
+}
+
+.right-zone button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5em 0.2em;
+}
+
+.right-zone button:hover {
+    background-color: rgb(19, 19, 117);
+}
+
+#flavourSelect {
+    position: relative;
+    padding: 0.5em;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+/* Quantity controls */
+#quantity {
+    font-size: 1.2em;
+    margin: 0 1em;
+}
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    right: -37%; /* Initially hidden */
+    width: 37%; /* Takes up the entirety of the screen */
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.5); /* Blue shade */
+    transition: right 0.3s ease; /* Smooth transition */
+    z-index: 1002; /* Ensure it's above other content */
+}
+
+.cart-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%; /* Adjust width as needed */
+    height: 100%;
+    background-color: white; /* Background color of cart content */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    display: flex;
+    flex-direction: column;
+}
+
+.close-cart-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1003; /* Ensure it's above the cart content */
+}
+
+.checkout-btn {
+    margin-top: auto; /* Pushes the button to the bottom */
+    padding: 10px 20px;
+    background-color: #007bff; /* Default blue shade */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.open-cart-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1002; /* Ensure it's above the cart overlay */
+}
+
+#total-to-pay-at-checkout {
+    position: fixed; /* Adjusted to be at most 20px above the checkout button */
+    bottom: 47px;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: #333; /* Text color */
+    font-weight: bold; /* Make it bold */
+}
+
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.remove-button:hover {
+    background-color: #cc0000;
+}
+
+#cartItems li {
+    margin-bottom: 5px; /* Increase the margin between each cart item */
+}
+
+
+/* Modal styles */
+.image-modal {
+    display: none; 
+    position: fixed;
+    z-index: 11000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+

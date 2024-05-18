@@ -61,4 +61,36 @@ class SiteController extends Controller {
 
         return 'Handling data';
     }
+
+    public function loadShopVariety() {
+        return $this->render('shopVariety');
+    }
+
+    public function loadShopFruety() {
+        return $this->render('shopFruety');
+    }
+
+    public function loadShopCocoa() {
+        return $this->render('shopCocoa');
+    }
+
+    public function loadShopPeanutButter() {
+        return $this->render('shopPeanutButter');
+    }
+
+    public function loadShopFrosted() {
+        return $this->render('shopFrosted');
+    }
+
+    public function loadShopMappleWaffle() {
+        return $this->render('shopMappleWaffle');
+    }
+
+    public function loadShopCinnamonRoll() {
+        return $this->render('shopCinnamonRoll');
+    }
+
+    public function loadshopBlueberryMuffin() {
+        return $this->render('shopBlueberryMuffin');
+    }
 }

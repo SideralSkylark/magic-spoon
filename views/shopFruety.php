@@ -1,21 +1,23 @@
-<div class="content clearfix">
+<div class="content clearfix fruety-page">
         <div class="left-zone">
-            <img class="main-image" src="/Assets/images/MS_VARIETY_4PACK-434857.avif" alt="Main Image">
-            <img class="mountain" src="/Assets/images/variety/Montain.png" alt="mountain">
+            <img class="main-image" src="/Assets/images/Fruety/box.png" alt="Main Image">
+            <img class="mountain" src="/Assets/images/Fruety/Mountain.png" alt="mountain">
             <div class="circle-images"></div>
         </div>
         <div class="right-zone">
-            <h1>Variety</h1>
+            <h1>Fruety</h1>
             <h2>1 CASE (4 BOXES)</h2>
-            <p>Try our most popular flavors—Fruity, Frosted, Cocoa, and Peanut Butter.<br>
-             We’ve reimagined all your favorite childhood cereals with 4g net carbs, 13-14g <br>
-             complete protein, 140-170 calories, and no artificial ingredients.</p>
-            <h3>Variety</h3>
-            <img class="carrot" src="/Assets/images/variety/Carrot.png" alt="carrot">
-            <img class="wave" src="/Assets/images/variety/Wave.png" alt="wave">
+            <p>A fruity cereal that isn’t loopy. We’ve reimagined your favorite fruit-forward <br>
+             childhood cereal with 4g net carbs, 13g complete protein,<br>
+             150 calories, and no artificial ingredients.
+            <img class="carrot" src="/Assets/images/Fruety/Carrot.png" alt="carrot">
+            <img class="wave" src="/Assets/images/Fruety/Wave.png" alt="wave">
+            <h3>Fruity</h3>
+            <img class="carrot" src="/Assets/images/Fruety/Carrot.png" alt="carrot">
+            <img class="wave" src="/Assets/images/Fruety/Wave.png" alt="wave">
             <select id="flavourSelect">
+                <option value="Fruety">Fruety</option>
                 <option value="Variety">Variety</option>
-                <option value="Fruity">Fruity</option>
                 <option value="Cocoa">Cocoa</option>
                 <option value="PeanutButter">Peanut Butter</option>
                 <option value="Frosted">Frosted</option>
@@ -44,15 +46,27 @@
 
     <!-- JavaScript functions -->
     <script>
+
+        // Set the page's class name
+    document.body.className = 'shopnowfruety-page';
+
         document.addEventListener("DOMContentLoaded", function () {
             const pageClasses = {
-                'shopnowfruety-page': [
+                'shopnowvariety-page': [
                     '/Assets/images/variety/1.avif',
                     '/Assets/images/variety/2.avif',
                     '/Assets/images/variety/3.avif',
                     '/Assets/images/variety/4.avif',
                     '/Assets/images/variety/5.avif',
                     '/Assets/images/variety/6.avif'
+                ],
+                'shopnowfruety-page': [
+                    '/Assets/images/Fruety/macros.png',
+                    '/Assets/images/Fruety/bowl.png',
+                    '/Assets/images/Fruety/showcase.png',
+                    '/Assets/images/Fruety/boxes.jpg',
+                    '/Assets/images/Fruety/milk.jpg',
+                    '/Assets/images/Fruety/label.png'
                 ]
                 // Add more page-specific arrays here as needed
             };
@@ -157,7 +171,7 @@
                 var quantity = parseInt(document.getElementById('quantity').textContent);
                 var itemName = document.querySelector('.right-zone h1').textContent;
                 var itemPrice = parseFloat(document.querySelector('#price').textContent.replace('$', ''));
-                const productId = 1;
+                const productId = 2;
 
                 var totalPrice = itemPrice * quantity;
                 this.cart.addItem({ id: productId, name: itemName, quantity: quantity, price: totalPrice });
@@ -236,6 +250,16 @@
             const totalPriceElement = document.getElementById('total-to-pay-at-checkout');
             totalPriceElement.textContent = `Total: $${store.cart.getTotalPrice().toFixed(2)}`;
         }
+
+        // Get the body element
+const body = document.body;
+
+// Get the classList of the body element
+const classNames = body.classList;
+
+// Convert classList to an array and log it
+const classArray = Array.from(classNames);
+console.log(classArray);
     </script>
 
 <?php

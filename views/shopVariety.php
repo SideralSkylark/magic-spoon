@@ -1,4 +1,4 @@
-<div class="content clearfix">
+<div class="content clearfix shopnowfruety-page">
         <div class="left-zone">
             <img class="main-image" src="/Assets/images/MS_VARIETY_4PACK-434857.avif" alt="Main Image">
             <img class="mountain" src="/Assets/images/variety/Montain.png" alt="mountain">
